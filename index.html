@@ -2,55 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/boostarena/favicon.svg" />
+  <link rel="icon" type="image/jpeg" href="/boostarena/favicon.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <title>Raise the Sails. Face the Horizon.</title>
     <script type="module" crossorigin src="/boostarena/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/boostarena/assets/styles-X9THPhCB.css">
+    <link rel="stylesheet" crossorigin href="/boostarena/assets/styles-1J9KrJ38.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+    
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero-section" id="hero">
+    <div class="container hero-container">
+        <picture>
+            <source srcset="/boostarena/assets/logo-desk-DmWcsqNE.png 1x, /boostarena/assets/logo-desk@2x-FvQIU1o2.png 2x" media="(min-width: 1439px)" />
+            <source srcset="/boostarena/assets/logo-mob-DpIe-FnL.png 1x, /boostarena/assets/logo-mob@2x-B2ddU61S.png 2x" media="(max-width: 1438px)" />
+            <img class="hero-title-img" src="/boostarena/assets/logo-mob-DpIe-FnL.png" alt="Raise the Sails" loading="lazy" />
+        </picture>        
+        <h1 class="hero-title">Raise the Sails.<br/><span class="span">Face the Horizon.</span> </h1>
+
+        <a class="hero-button" href="#demo">
+            <picture>
+                <source srcset="/boostarena/assets/button-desk-C-pVCUcV.png 1x, /boostarena/assets/button-desk@2x-Cqrd1Ird.png 2x" media="(min-width: 1439px)" />
+                <source srcset="/boostarena/assets/button-swTAYM62.png 1x, /boostarena/assets/button@2x-BJY_rfVM.png 2x" media="(max-width: 1438px)" />
+                <img class="hero-btn pulse" src="/boostarena/assets/button-swTAYM62.png" alt="Enter" loading="lazy" />
+            </picture>
+        </a>
+        <div class="hero-wrapper">
+            <h2 class="hero-subtitle">Disclaimer</h2>
+            <p class="hero-text">Boostarena.space IS A PLATFORM FOR HAVING FUN. THE PROBABILITY OF WINNING PLAYING THIS APP CANNOT BE CONSIDERED THE SAME
+            AS WINNING IN REAL LIFE GAMES. APP IS AVAILABLE TO ADULT AUDIENCES OVER 18 YEARS OF AGE. ENJOY PLAYING THIS FREE APP!</p>
+        </div>
+    </div>
+</section>
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
+    
 
   </body>
 </html>
