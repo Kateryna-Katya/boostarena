@@ -77,3 +77,42 @@ background-size: contain;
         text-align: justify;
         color: #093247;
 }
+@media only screen and (min-width: 1439px) {
+   .hero-section{
+    background-image: url("/img/hero/desk.png");
+    background-size: cover;
+   }
+   .hero-container{
+padding-bottom: 100px;
+    padding-top: 113px;
+    position: relative;
+  }
+  .hero-title{
+ position: absolute;
+    text-align: left;
+    top: 12%;
+    left: 56%;
+    font-size: 48px;
+  }
+  .hero-title-img{
+    width: 346px;
+        height: 375px;
+  }
+  .hero-btn{
+   position: absolute;
+    top: 36%;
+        left: 56%;
+  }
+ .hero-wrapper{
+    margin-top: 200px;
+ }
+  .hero-subtitle{
+    font-size: 40px;
+  }
+  .hero-text{
+    font-size: 24px;
+  }
+  .hero-title-img{
+    margin-left: 270px;
+  }
+}
