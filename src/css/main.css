@@ -231,3 +231,8 @@ padding-bottom: 100px;
     white-space: nowrap;
     border: 0;
 }
+@media only screen and (min-width: 1439px) {
+  .demo-section{
+    background-image: url("/img/demo/desk.png");
+  }
+}
