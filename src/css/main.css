@@ -124,70 +124,102 @@ padding-bottom: 100px;
     background-size: cover;
 }
 
+/* ===== ОСНОВА ===== */
+
+.demo-container {
+    position: relative;
+}
+
 .demo-wrapper {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.demo-container {
-    position: relative;
-}
+/* ===== КНОПКА ===== */
 
 .demo-btn {
     position: absolute;
-    z-index: 2;
-cursor: pointer;
-    top: 40%;
-    left: 40%;
-    transform: translateX(-30%);
-}
-
-.game-img {
-    width: 100%;
-    display: block;
-    margin-bottom: 22px;
+    z-index: 10;
+    display: inline-block;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    width: 284px;
+    height: 85px;
+    transform: translate(-50%, -50%);
 }
 
 .demo-img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    width: 284px;
+    height: 85px;
 }
 
-/* iframe поверх картинки */
+/* ===== ФОН ===== */
+
+.game-img {
+    width: 100%;
+    display: block;
+}
+
+/* ===== IFRAME ===== */
+
 .iframe-wrapper {
     position: absolute;
-    top: 5%;
-    /* під екран у картинці */
-    left: 49%;
-    transform: translateX(-53%);
+    top: 1%;
+    left: 34%;
+    transform: translateX(-50%);
     width: 68%;
     height: 54%;
-    z-index: 5;
+    z-index: 20;
+
+    /* 🔥 ГОЛОВНЕ ВИПРАВЛЕННЯ */
+    pointer-events: none;
 }
 
 #gameIframe {
-    width: 109%;
-    height: 146%;
+    width: 147%;
+    height: 182%;
     border: none;
     display: none;
     background: #000;
+    border-radius: 20px;
 }
+
+/* АКТИВНИЙ СТАН */
+.iframe-wrapper.active {
+    pointer-events: auto;
+}
+
+#gameIframe.active {
+    display: block;
+}
+
+/* ===== КНОПКА ЗАКРИТТЯ ===== */
 
 #closeIframeBtn {
     position: absolute;
-    top: 12px;
-    right: -30px;
+    top: 30px;
+    right: -80px;
+
     background: none;
     border: none;
     cursor: pointer;
+
     display: none;
-    z-index: 10;
-    width: 40px;
-    height: 20px;
+
+    z-index: 9999;
+    /* 🔥 НАД iframe */
+    pointer-events: auto;
 }
+
+#closeIframeBtn.active {
+    display: block;
+}
+
+/* ===== VISUALLY HIDDEN ===== */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
