@@ -1,9 +1,4 @@
-.hero-section{
-background-image: url("/img/hero/mob.png");
-background-repeat: no-repeat;
-background-position: top 40px center;
-background-size: contain;
-}
+
 .hero-container{
     padding-top: 59px;
     padding-bottom: 50px;
@@ -78,10 +73,7 @@ background-size: contain;
         color: #093247;
 }
 @media only screen and (min-width: 1439px) {
-   .hero-section{
-    background-image: url("/img/hero/desk.png");
-    background-size: cover;
-   }
+
    .hero-container{
 padding-bottom: 100px;
     padding-top: 113px;
@@ -117,12 +109,7 @@ padding-bottom: 100px;
   }
 }
 /* demo */
-.demo-section {
-    background-image: url("/img/demo/mob.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-}
+
 
 /* ===== ОСНОВА ===== */
 
@@ -133,7 +120,11 @@ padding-bottom: 100px;
 .demo-wrapper {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto 0;
+    height: 876px;
+}
+.game-img{
+height: 876px;
 }
 
 /* ===== КНОПКА ===== */
@@ -232,7 +223,58 @@ padding-bottom: 100px;
     border: 0;
 }
 @media only screen and (min-width: 1439px) {
-  .demo-section{
-    background-image: url("/img/demo/desk.png");
-  }
+.demo-wrapper {
+    margin: 0px auto 0;
+    height: 640px;
+}
+
+.game-img {
+    height: 640px;
+}
+.demo-container{
+    padding-top: 30px;
+}
+}
+/* voyage */
+.voyage-container{
+    padding-top: 80px;
+    padding-bottom: 148px;
+}
+.voyage-title{
+    font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 1.15;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: #093247;
+}
+.voyage-red-text{
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #ff0b0b;
+        text-align: center;
+}
+.voyage-text{
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        color: #fff;
+}
+@media only screen and (min-width: 1439px) {
+ .voyage-container{
+    padding-bottom: 132px;
+    padding-top: 60px;
+ }
+.voyage-text{
+width: 606px;
+margin-left: auto;
+margin-right: auto;
+ }
 }
