@@ -15,14 +15,59 @@
          
     <title>Raise the Sails. Face the Horizon.</title>
     <script type="module" crossorigin src="/boostarena/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/boostarena/assets/styles-B2VvM6pH.css">
+    <link rel="stylesheet" crossorigin href="/boostarena/assets/styles--9AwqohV.css">
   </head>
   <body>
-    
+    <header class="header" id="site-header">
+    <div class="header-container container">
+        <button type="button" class="menu-button" aria-label="menu toggle">
+            <span class="icon">
+            <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="19" height="3" fill="white" />
+                <rect y="7" width="19" height="3" fill="white" />
+                <rect y="14" width="19" height="3" fill="white" />
+            </svg>
+            </span>
+        </button>
+
+        <nav class="nav ">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="links" href="./#home">Home</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#demo">Demo</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#about">About</a>
+                </li>
+
+                <li class="navigation-item">
+                    <a class="links" href="./#features">Features</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+    <ul class="menu-list">
+        <li class="menu-item"><a class="menu-list-item" href="./#home">Home</a></li>
+        <li class="menu-item"><a class="menu-list-item" href="./#demo">Demo</a></li>
+        <li class="menu-item"><a class="menu-list-item" href="./#about">About</a></li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#features">Features</a>
+        </li>
+        <li class="menu-item"><a class="menu-list-item" href="privacy.html">Privacy Policy</a></li>
+        <li class="menu-item"><a class="menu-list-item" href="terms.html">Terms & Conditions</a></li>
+
+        <li class="menu-item"><a class="menu-list-item" href="cookies.html">Cookies Policy</a></li>
+    </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="hero-section" id="hero">
+      <section class="hero-section" id="home">
     <div class="container hero-container">
         <picture>
             <source srcset="/boostarena/assets/logo-desk-DmWcsqNE.png 1x, /boostarena/assets/logo-desk@2x-FvQIU1o2.png 2x" media="(min-width: 1439px)" />
@@ -73,7 +118,7 @@
             </a>
         </div>
     </section>
-<section class="voyage-section">
+<section class="voyage-section" id="about">
     <div class="container voyage-container">
         <h2 class="voyage-title">Voyage</h2>
         <p class="voyage-red-text">The Art of Gentle Play</p>
@@ -85,7 +130,7 @@
         This chapter isn’t a retelling of the old voyage. It’s sharper, riskier, and the stakes feel heavier.</p>
     </div>
 </section>
-<section class="features-section">
+<section class="features-section" id="features">
     <div class="container feature-container">
         <h2 class="features-title">FEATURES</h2>
         <div class="features-swiper swiper">
