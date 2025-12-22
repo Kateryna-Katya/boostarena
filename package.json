@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/boostarena/",
+     "build": "vite build --base=/boostarena/",
     "preview": "vite preview"
   },
   "devDependencies": {

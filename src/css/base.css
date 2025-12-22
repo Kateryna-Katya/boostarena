@@ -1,14 +1,14 @@
 
 body {
 background-color: #fff;
-background-image: url("/img/body/mobile.jpg");
+background-image: url("/img/body/mob.jpg");
 background-repeat: no-repeat;
 background-position: top center;
 background-size: cover;
 }
 @media only screen and (min-width: 1439px) {
  body{
-background-image: url("/img/body/desc.jpg");
+background-image: url("/img/body/desk.jpg");
  } 
 }
 
